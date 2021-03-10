@@ -1,8 +1,13 @@
-import React from 'react'
+import React, { useContext } from 'react'
+import Gif from '../../components/Gif';
+import GifsContext from '../../context/GifsContext'
 
 const Detail = ({ params }) => {
-    console.log(params.id)
-    return <h1>GIF con id {params.id}</h1>
+
+    const { gifs } = useContext(GifsContext);
+    const gif = gifs.find(singleGif => singleGif.id === params.id);
+
+    return <Gif {...gif} />
 }
 
 export default Detail
