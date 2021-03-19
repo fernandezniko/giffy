@@ -1,5 +1,5 @@
 import React, { useCallback } from "react"
-import { Link, useLocation } from "wouter"
+import { useLocation } from "wouter"
 import ListOfGifs from "components/ListOfGifts/ListOfGifs";
 import useGifs from "hooks/useGifs";
 import TrendingSearches from "components/TrendingSearches/LazyTrending";
