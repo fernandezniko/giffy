@@ -1,4 +1,3 @@
-import { API_KEY, API_URL } from './settings'
 
 const fromApiResponseToGifs = apiResponse => {
     const { data = [] } = apiResponse
@@ -6,7 +5,7 @@ const fromApiResponseToGifs = apiResponse => {
 }
 
 export default function getTrendingSearches() {
-    const apiURL = `${API_URL}/trending/searches?api_key=${API_KEY}`
+    const apiURL = `${process.env.REACT_APP_API_URL}/trending/searches?api_key=${process.env.REACT_APP_API_KEY}`
 
     return fetch(apiURL)
         .then(res => res.json())

@@ -5,6 +5,7 @@ import SearchResults from './pages/SearchResults/SearchResults'
 import Detail from './pages/Detail/Detail'
 import { GifsContextProvider } from './context/GifsContext'
 import './App.css';
+require('dotenv').config()
 
 const App = () => {
 
