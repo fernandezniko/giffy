@@ -1,4 +1,3 @@
-
 const fromApiResponseToGifs = apiResponse => {
     const { data = [] } = apiResponse
     return data
