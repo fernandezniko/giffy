@@ -26,9 +26,11 @@ const SearchResults = ({ params }) => {
         {loading
             ? <Spinner />
             : <>
-                <h3 className="App-title">{decodeURI(keyword)}</h3>
-                <ListOfGifs gifs={gifs} />
-                <div id="visor" ref={externalRef}></div>
+                <div className="App-wrapper">
+                    <h3 className="App-title">{decodeURI(keyword)}</h3>
+                    <ListOfGifs gifs={gifs} />
+                    <div id="visor" ref={externalRef}></div>
+                </div>
             </>
         }
     </>
